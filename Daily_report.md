@@ -1,5 +1,3 @@
-Here is the corrected file with the "Reusable Daily Entry Template" placed at the top for consistency and ease of use:
-
 # 🚀 Mission: Beginner to Master DSA in 3 Months 🔥
 
 ## 🎯 Goal
@@ -34,5 +32,3 @@ You can copy and paste this below the tracker to add a new entry quickly:
 |------|------------|---------------|--------------------------------------------------------------------------------------|------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------|------|------|--------------------------------------------------------|
 | 1    | 2025-08-07 | GFG, LeetCode | [Reverse an Array](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array/) | C++, Python       | Learned how to reverse an array in-place using two-pointer technique in multiple languages. | See `problems/2025-08-07/notes.md`                | O(n) | O(1) | Each element is swapped once using 2 pointers — no extra space |
 | 2    | 2025-08-08 | LeetCode      | [Two Sum](https://leetcode.com/problems/two-sum/)                                    | Java, Python      | Understood how HashMap helps in reducing search time — key insight for future problems.     | `map[target - nums[i]]` for quick lookup          | O(n) | O(n) | One pass through array + HashMap storage for lookups |
-
-This structure keeps your template accessible and ensures entries remain uniform and easy to update. Let me know if you need any further modifications!
