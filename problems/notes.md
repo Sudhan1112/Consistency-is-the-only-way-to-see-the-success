@@ -1,39 +1,81 @@
-# 📅 Date: 2025-08-07
-## 🧠 Problems Solved:
-1. Reverse Array
-2. Is Palindrome
+## 📅 Date: YYYY-MM-DD  
+### 🧠 Problem Title  
+**Platform:** (e.g., LeetCode #344)  
+
+### 📜 Problem Statement (Brief)  
+Short 1–2 sentence version of the problem.  
+
+### 🧩 Key Patterns & Concepts  
+Main approach/pattern used.  
+
+### 🌍 Real-world Relevance  
+How or where this applies outside of coding challenges.  
+
+### 🥉 Brute Force Approach  
+**Idea:** Short description.  
+
+**Time:** O(?)  
+
+**Space:** O(?)  
+
+### 🥇 Optimal Approach  
+**Idea:** Short description.  
+
+**Time:** O(?)  
+
+**Space:** O(?)  
+
+### 📚 Detailed Learning Notes  
+Insights you gained, mistakes avoided, tricks learned.  
+
+### 💻 Code Snippet (Python)  
+```python
+# Your code here
+````
 
 ---
 
-## ✅ Problem #1: Reverse Array
-### ⭐ Concept:
-- Two-pointer technique to swap elements.
-- Start from ends, move toward center.
+## Example — Reverse Array
 
-### 🛠️ Time Complexity:
-- `O(n)` — Single pass through the array.
+📅 Date: 2025-08-07
 
-### 🧠 Space Complexity:
-- `O(1)` — In-place reversal.
+**Platform:** —
 
----
+**Problem Statement:** Reverse the elements of an array in-place.
 
-## ✅ Problem #2: Is Palindrome
-### ⭐ Concept:
-- Compare string with its reverse or use two-pointer.
+**Key Patterns & Concepts:**
 
-### 🛠️ Time Complexity:
-- `O(n)`
+* Two-pointer swap from both ends toward center.
 
-### 🧠 Space Complexity:
-- `O(1)` if in-place check, else `O(n)` if reversed string is stored.
+**Real-world Relevance:**
 
----
+* Data reversal in media buffers, undo operations, queue/stack transformations.
 
-## 🚀 Learnings:
-- Mastered two-pointer approach.
-- Got better at thinking in-place without extra space.
+**Brute Force:**
 
-## 🔥 Confidence Level:
-- 🔵 🔵 🔵 🔵 ⚪ (4/5)
+* Make a new array, push elements from last to first.
+* **Time:** O(n)
+* **Space:** O(n)
 
+**Optimal:**
+
+* Swap in-place using two pointers.
+* **Time:** O(n)
+* **Space:** O(1)
+
+**Learning Notes:**
+
+* Two-pointer is memory efficient.
+* Often avoids the overhead of extra data structures.
+
+**Code:**
+
+```python
+def reverse_array(arr):
+    left, right = 0, len(arr) - 1
+    while left < right:
+        arr[left], arr[right] = arr[right], arr[left]
+        left += 1
+        right -= 1
+    return arr
+```
