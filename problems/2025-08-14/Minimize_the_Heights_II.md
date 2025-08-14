@@ -1,53 +1,55 @@
-📅 Date: 2025-08-14
-🧠 Problem Title
+# 📅 Date: 2025-08-14  
+## 🧠 Problem Title  
+**Platform:** GFG — [Minimize the Heights II](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/minimize-the-heights3351)  
 
-Platform: GFG — Minimize the Heights II
+---
 
-📜 Problem Statement (Brief)
+## 📜 Problem Statement (Brief)  
+Given heights of towers and a value `k`, increase or decrease each tower height by exactly `k` and minimize the difference between the tallest and shortest tower.
 
-Given heights of towers and a value k, increase or decrease each tower height by exactly k and minimize the difference between the tallest and shortest tower.
+---
 
-🧩 Key Patterns & Concepts
+## 🧩 Key Patterns & Concepts  
+- Sorting + Greedy  
+- Adjusting smallest and largest values  
+- Trying every split point for min difference  
 
-Sorting + Greedy
+---
 
-Adjusting smallest and largest values
+## 🌍 Real-world Relevance  
+- Signal strength tuning in networks  
+- Product dimension adjustments in manufacturing  
+- Balancing workloads in distributed systems  
 
-Trying every split point for min difference
+---
 
-🌍 Real-world Relevance
-
-Signal strength tuning in networks
-
-Product dimension adjustments in manufacturing
-
-Balancing workloads in distributed systems
-
-🥉 Brute Force Approach
-
-Idea:
+## 🥉 Brute Force Approach  
+**Idea:**  
 Try all ±k combinations for each tower, find min difference.
 
-Time: O(2ⁿ) — infeasible for large n
-Space: O(1)
+- **Time:** O(2ⁿ) — infeasible for large `n`  
+- **Space:** O(1)  
 
-🥇 Optimal Approach
+---
 
-Idea:
-Sort array, set initial min/max after adding/subtracting k, then iterate to find smallest possible difference.
+## 🥇 Optimal Approach  
+**Idea:**  
+Sort array, set initial min/max after adding/subtracting `k`, then iterate to find smallest possible difference.
 
-Time: O(n log n) — sorting dominates
-Space: O(1)
+- **Time:** O(n log n) — sorting dominates  
+- **Space:** O(1)  
 
-📚 Detailed Learning Notes
+---
 
-Sorting first helps consider height changes in order.
+## 📚 Detailed Learning Notes  
+- Sorting first helps consider height changes in order.  
+- Always check for negative heights before applying change.  
+- A good example of reducing complexity using ordering.  
 
-Always check for negative heights before applying change.
+---
 
-A good example of reducing complexity using ordering.
-
-💻 Code Snippet (Java)
+## 💻 Code Snippet (Java)  
+```java
 import java.util.*;
 
 class Solution {

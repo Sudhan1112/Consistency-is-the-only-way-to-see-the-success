@@ -1,53 +1,55 @@
-📅 Date: 2025-08-14
-🧠 Problem Title
+# 📅 Date: 2025-08-14  
+## 🧠 Problem Title  
+**Platform:** GFG — [Kadane’s Algorithm](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/kadanes-algorithm-1587115620)  
 
-Platform: GFG — Kadane’s Algorithm
+---
 
-📜 Problem Statement (Brief)
-
+## 📜 Problem Statement (Brief)  
 Find the maximum sum of any contiguous subarray in the given array.
 
-🧩 Key Patterns & Concepts
+---
 
-Dynamic programming (prefix sums in disguise)
+## 🧩 Key Patterns & Concepts  
+- Dynamic programming (prefix sums in disguise)  
+- Local vs. global max tracking  
+- Avoids recomputing sums  
 
-Local vs. global max tracking
+---
 
-Avoids recomputing sums
+## 🌍 Real-world Relevance  
+- Maximum profit/loss over continuous days  
+- Best-performing segment in analytics data  
+- Identifying optimal streak in gaming scores  
 
-🌍 Real-world Relevance
+---
 
-Maximum profit/loss over continuous days
+## 🥉 Brute Force Approach  
+**Idea:**  
+Check all possible subarrays and track the largest sum.  
 
-Best-performing segment in analytics data
+- **Time:** O(n²)  
+- **Space:** O(1)  
 
-Identifying optimal streak in gaming scores
+---
 
-🥉 Brute Force Approach
+## 🥇 Optimal Approach  
+**Idea:**  
+Iterate once, updating current sum and global max. If current sum drops below current element, restart at that element.  
 
-Idea:
-Check all possible subarrays and track the largest sum.
+- **Time:** O(n)  
+- **Space:** O(1)  
 
-Time: O(n²)
-Space: O(1)
+---
 
-🥇 Optimal Approach
+## 📚 Detailed Learning Notes  
+- Kadane’s skips negative carryover by restarting sum.  
+- Works for arrays with negative numbers if handled carefully.  
+- Also useful for circular array problems (modified version).  
 
-Idea:
-Iterate once, updating current sum and global max. If current sum drops below current element, restart at that element.
+---
 
-Time: O(n)
-Space: O(1)
-
-📚 Detailed Learning Notes
-
-Kadane’s skips negative carryover by restarting sum.
-
-Works for arrays with negative numbers if handled carefully.
-
-Also useful for circular array problems (modified version).
-
-💻 Code Snippet (Java)
+## 💻 Code Snippet (Java)  
+```java
 class Solution {
     int maxSubarraySum(int[] arr) {
         int ans = arr[0];

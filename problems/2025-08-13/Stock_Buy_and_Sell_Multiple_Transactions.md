@@ -1,48 +1,54 @@
-## 📅 Date: 2025-08-13
-### 🧠 Problem Title  
-**Platform:** GFG — Stock Buy and Sell (Multiple Transactions Allowed)
+# 📅 Date: 2025-08-13  
+## 🧠 Problem Title  
+**Platform:** GFG — [Stock Buy and Sell (Multiple Transactions Allowed)](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/stock-buy-and-sell2615)  
 
-### 📜 Problem Statement (Brief)  
+---
+
+## 📜 Problem Statement (Brief)  
 Given stock prices for `n` days, maximize profit when you are allowed to make multiple buy/sell transactions (but cannot hold more than one stock at a time).
 
-### 🧩 Key Patterns & Concepts  
-- Greedy profit accumulation
-- Only buy before a rise, sell before a fall
-- Sum up every profitable upward movement
+---
 
-### 🌍 Real-world Relevance  
-- Stock market short-term trading strategies
-- Cryptocurrency day-trading bots
-- Seasonal commodity buying/selling cycles
+## 🧩 Key Patterns & Concepts  
+- Greedy profit accumulation  
+- Only buy before a rise, sell before a fall  
+- Sum up every profitable upward movement  
 
 ---
 
-### 🥉 Brute Force Approach  
+## 🌍 Real-world Relevance  
+- Stock market short-term trading strategies  
+- Cryptocurrency day-trading bots  
+- Seasonal commodity buying/selling cycles  
+
+---
+
+## 🥉 Brute Force Approach  
 **Idea:**  
-Try all buy-sell pairs and track total profit.
+Try all buy-sell pairs and track total profit.  
 
-**Time:** O(n²)  
-**Space:** O(1)  
+- **Time:** O(n²)  
+- **Space:** O(1)  
 
 ---
 
-### 🥇 Optimal Approach  
+## 🥇 Optimal Approach  
 **Idea:**  
-Iterate through the prices array, and whenever today’s price is higher than yesterday’s, add the difference to profit.
+Iterate through the prices array, and whenever today’s price is higher than yesterday’s, add the difference to profit.  
 
-**Time:** O(n) — single pass  
-**Space:** O(1) — only one profit counter  
+- **Time:** O(n) — single pass  
+- **Space:** O(1) — only one profit counter  
 
 ---
 
-### 📚 Detailed Learning Notes  
+## 📚 Detailed Learning Notes  
 - This problem is purely greedy — you never miss profit opportunities.  
 - The “multiple transactions” condition makes it different from the max-one-transaction variant.  
-- Avoids tracking exact buy/sell days — profit calculation is enough.
+- Avoids tracking exact buy/sell days — profit calculation is enough.  
 
 ---
 
-### 💻 Code Snippet (Java)
+## 💻 Code Snippet (Java)  
 ```java
 class Solution {
     public int maximumProfit(int prices[]) {
