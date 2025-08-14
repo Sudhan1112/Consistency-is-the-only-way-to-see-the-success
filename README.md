@@ -38,6 +38,12 @@ You can copy and paste this below the tracker to add a new entry quickly:
 | 6    | 2025-08-10 | LeetCode | [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | Java | Traversing string & tracking digits dynamically. | Keep track of largest & second largest digit. | O(n) | O(1) | Scan once, store two values. |
 | 7    | 2025-08-10 | LeetCode | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Java | Same as "Move All Zeroes to End" — reinforced two-pointer pattern. | Maintain write pointer `j`. | O(n) | O(1) | Linear pass; in-place. |
 | 8    | 2025-08-11 | GFG | [Majority Element (More than ⌊n/3⌋ times)](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/majority-vote) | Java | Learned Boyer–Moore Majority Vote algorithm for n/3 variation; also implemented sort-based counting. | At most 2 elements can exceed ⌊n/3⌋; use two-pass vote + verify. | O(n) optimal, O(n log n) sort-based | O(1) optimal, O(1) sort-based | Boyer–Moore is constant space and avoids sorting overhead. |
+| 8 | 2025-08-11 | GFG | Majority Element (More than ⌊n/3⌋ times) | Java | Learned Boyer–Moore Majority Vote algorithm for n/3 variation; also implemented sort-based counting. | At most 2 elements can exceed ⌊n/3⌋; use two-pass vote + verify. | O(n) optimal, O(n log n) sort-based | O(1) optimal, O(1) sort-based | Boyer–Moore is constant space and avoids sorting overhead. |
+| 9 | 2025-08-13 | GFG | Stock Buy and Sell – Multiple Transactions Allowed | Java | Learned to sum all upward price differences for multiple transactions. | Add (prices[i] - prices[i-1]) if positive. | O(n) | O(1) | One pass over prices; no extra memory. |
+| 10 | 2025-08-13 | GFG | Stock Buy and Sell – Max One Transaction Allowed | Java | Learned to track min price so far and compute max profit in one pass. | Maintain `min_p` and update max profit. | O(n) | O(1) | Single scan, no extra storage. |
+| 11 | 2025-08-14 | GFG | Minimize the Heights II | Java | Learned greedy + sorting to minimize height difference after modification. | Sort array; try adjusting smallest and largest. | O(n log n) | O(1) | Sorting dominates time; no extra structures. |
+| 12 | 2025-08-14 | GFG | Kadane’s Algorithm | Java | Mastered finding max subarray sum using current and global sum tracking. | `cur_s = max(arr[i], cur_s + arr[i])`. | O(n) | O(1) | One scan, constant extra variables. |
+
 
 
 
