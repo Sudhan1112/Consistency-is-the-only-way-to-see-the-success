@@ -44,6 +44,6 @@ You can copy and paste this below the tracker to add a new entry quickly:
 | 12 | 2025-08-14 | GFG      | [Kadane’s Algorithm](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/kadanes-algorithm-1587115620)       | Java | Mastered finding max subarray sum using current and global sum tracking.   | `cur_s = max(arr[i], cur_s + arr[i])`.          | O(n)       | O(1)  | One scan, constant extra variables.           |
 | 13 | 2025-08-15 | GFG      | [Maximum Product Subarray](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/maximum-product-subarray3604) | Java | Learned to track both max and min products due to negatives.               | DP with `max_p`, `min_p`.                       | O(n)       | O(1)  | Trick: temp variable avoids overwrite errors. |
 
-yesterday 2problem completed.
+today In overall 4problem completed.
 today watched tutorial 
 
