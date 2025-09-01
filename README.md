@@ -52,3 +52,4 @@ You can copy and paste this below the tracker to add a new entry quickly:
 
 
 Not yet done anything for today let me start with tomorrrow.
+Today one problem completed.
