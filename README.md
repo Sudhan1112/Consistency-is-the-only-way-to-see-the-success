@@ -51,5 +51,4 @@ You can copy and paste this below the tracker to add a new entry quickly:
 | 19 | 2025-08-16 | GFG      | [Smallest Positive Missing Number](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/smallest-positive-missing-number-1587115621) | Java | Used HashSet to track positives and find the first missing. | `while(!s.contains(i)) i++` | O(n) | O(n) | Efficient for unsorted arrays, handles positives only. |
 
 
-Not yet done anything for today let me start with tomorrrow.
-Today no problem completed.
+No progression still 3days so far...............
