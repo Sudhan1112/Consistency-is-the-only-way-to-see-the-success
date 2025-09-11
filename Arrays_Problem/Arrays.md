@@ -35,14 +35,21 @@ Takeaway: Linear scan baseline is the cleanest choice for simple ranking, shifti
 > Pattern Idea: Use two indices moving towards each other (or in the same direction) to reduce nested loops.  
 > Best for **sorted arrays, subarray sums, or pairing problems**.
 
-- **Pair with target sum**  
-- **Remove duplicates from sorted array**  
-- **Container with most water**  
+- **Reverse an Array**  
+  - Idea: Place one pointer at the start and one at the end, swap while moving inward.  
+  - Time: O(n), Space: O(1).  
+  - Example: `arr = [1,2,3,4,5] → [5,4,3,2,1]`  
+
 - **Move Zeros to End (partitioning style)**  
   - `i` scans entire array, `j` tracks next position for non-zero.  
   - When `arr[i] != 0`, place at `arr[j]` and increment `j`.  
   - After loop, fill rest with zeros.  
+  - Time: O(n), Space: O(1).  
   - Example: `arr = [0,1,0,3,12] → [1,3,12,0,0]`  
+
+- **Pair with target sum**  
+- **Remove duplicates from sorted array**  
+- **Container with most water**  
 
 ---
 
