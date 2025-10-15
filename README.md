@@ -49,6 +49,3 @@ You can copy and paste this below the tracker to add a new entry quickly:
 | 17 | 2025-08-20 | LeetCode | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Java | Optimized frequency array approach for unique char index. | `freq[s.charAt(i) - 'a']++` | O(n) | O(26) ≈ O(1) | Two-pass: count frequency, then find first unique. |
 | 18 | 2025-08-16 | GFG      | [Maximum Circular Subarray Sum](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/max-circular-subarray-sum-1587115620) | Java | Learned to handle circular subarray max using total sum minus min subarray sum. | `max(max_s, tot - min_s)` | O(n) | O(1) | Handles all-negative arrays by checking `max_s < 0`. |
 | 19 | 2025-08-16 | GFG      | [Smallest Positive Missing Number](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/smallest-positive-missing-number-1587115621) | Java | Used HashSet to track positives and find the first missing. | `while(!s.contains(i)) i++` | O(n) | O(n) | Efficient for unsorted arrays, handles positives only. |
-
-
-Nothing have done bro..
